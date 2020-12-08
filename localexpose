@@ -1,5 +1,5 @@
 #! /bin/bash
 # Usage: localexpose example.com 443
 
-echo "Forwarding $1:$2 to 0.0.0.0:$2
+echo "Forwarding $1:$2 to 0.0.0.0:$2"
 socat tcp-listen:$2,reuseaddr,fork tcp:$1:$2
